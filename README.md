@@ -2,6 +2,11 @@
 
 This script aims to optimise TCP performance between two hosts.
 
+## Usage
+```shell
+bash <(curl -sSL https://raw.githubusercontent.com/nexstorm/magicTCP/main/main.sh)
+```
+
 ## Minimum requirements
 
 - Debian 11
