@@ -14,8 +14,8 @@ _________________________________________________
 install_magictcp_kernel(){
 magictcp_kernel_version="6.1.55-magictcp001"
     apt install -y wget
-    wget "https://dl.moohric.com/linux-headers-${magictcp_kernel_version}_${magictcp_kernel_version}-4_amd64.deb" -O "linux-headers-${magictcp_kernel_version}.deb"
-    wget "https://dl.moohric.com/linux-image-${magictcp_kernel_version}_${magictcp_kernel_version}-4_amd64.deb" -O "linux-image-${magictcp_kernel_version}.deb"
+    wget "https://alist.moohric.com/d/kernel/linux-headers-${magictcp_kernel_version}_${magictcp_kernel_version}-4_amd64.deb" -O "linux-headers-${magictcp_kernel_version}.deb"
+    wget "https://alist.moohric.com/d/kernel/linux-image-${magictcp_kernel_version}_${magictcp_kernel_version}-4_amd64.deb" -O "linux-image-${magictcp_kernel_version}.deb"
     dpkg -i "linux-headers-${magictcp_kernel_version}.deb"
     dpkg -i "linux-image-${magictcp_kernel_version}.deb"
     rm -rf "linux-headers-${magictcp_kernel_version}.deb"
