@@ -1,5 +1,5 @@
 #!/bin/bash
-
+clear
 echo """\
                          __                     
    ____  ___  _  _______/ /_____  _________ ___ 
@@ -59,6 +59,7 @@ apply_tcp_optimization(){
 
 echo "1. Install magicTCP kernel"
 echo "2. Apply TCP optimization"
+echo "3. Exit"
 
 read -p "Please select :" num
   case "$num" in
@@ -68,9 +69,11 @@ read -p "Please select :" num
   2)
     apply_tcp_optimization
     ;;
+  3)
+    exit 0
+    ;;
   *)
-  clear
-    echo -e "${Error}:Please select a valid option [0-99]"
+    echo -e "\033[31m\033[01mError: Please select a valid option [1-3]\033[0m"
     exit 1
     ;;
   esac
