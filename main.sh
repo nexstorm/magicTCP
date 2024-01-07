@@ -59,6 +59,7 @@ apply_tcp_optimization(){
 
 echo "1. Install magicTCP kernel"
 echo "2. Apply TCP optimization"
+echo "3. Exit"
 
 read -p "Please select :" num
   case "$num" in
@@ -68,9 +69,11 @@ read -p "Please select :" num
   2)
     apply_tcp_optimization
     ;;
+  3)
+    exit 1
+    ;;
   *)
-  clear
-    echo -e "${Error}:Please select a valid option [0-99]"
+    echo -e "${Error}:Please select a valid option [0-3]"
     exit 1
     ;;
   esac
