@@ -1,5 +1,5 @@
 #!/bin/bash
-
+clear
 echo """\
                          __                     
    ____  ___  _  _______/ /_____  _________ ___ 
@@ -73,7 +73,7 @@ read -p "Please select :" num
     exit 0
     ;;
   *)
-    echo -e "${Error}:Please select a valid option [0-3]"
+    echo -e "\033[31m\033[01mError: Please select a valid option [1-3]\033[0m"
     exit 1
     ;;
   esac
