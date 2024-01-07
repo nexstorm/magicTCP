@@ -70,7 +70,7 @@ read -p "Please select :" num
     apply_tcp_optimization
     ;;
   3)
-    exit 1
+    exit 0
     ;;
   *)
     echo -e "${Error}:Please select a valid option [0-3]"
